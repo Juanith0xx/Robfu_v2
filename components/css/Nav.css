@@ -1,0 +1,183 @@
+/* Navbar */
+.nav {
+  background-color: white;
+  padding: 30px 40px;
+}
+
+.nav.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.custom-nav-spacing .nav-link {
+  padding-left: 30px;
+  margin-left: 30px;
+  color: #2b2c2e !important;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.custom-nav-spacing .nav-link:last-child {
+  margin-right: 0;
+}
+
+.button-contact {
+  background-color: #E9672B;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  width: 150px;
+  color: white !important;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;                /* Usa flexbox */
+  align-items: center;          /* Alinea verticalmente */
+  justify-content: center;      /* Alinea horizontalmente */
+  text-align: center;           /* Asegura que el texto esté centrado */
+}
+.button-contact:hover {
+  background-color: #ffb840;
+  color: white !important;    
+}
+.button-disena{
+  background-color: #E9672B;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  width: 150px;
+  color: white !important;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;                /* Usa flexbox */
+  align-items: center;          /* Alinea verticalmente */
+  justify-content: center;      /* Alinea horizontalmente */
+  text-align: center;           /* Asegura que el texto esté centrado */
+  outline: none;
+  border: none;
+}
+.button-disena:hover {
+  background-color: #ffb840;
+  color: white !important;    
+}
+
+.dropdown-menu a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  padding: 20px 10px; /* Reducido el padding horizontal */
+  color: #2b2c2e !important;
+  text-decoration: none;
+  background: linear-gradient(to right, transparent 50%, #b75145 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: background-position 0.8s ease-out, color 0.5s ease-out !important;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.dropdown-menu a:hover {
+  background-color: #b75145;
+  background-position: right bottom;
+  color: white;
+  border-radius: 5px !important;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center; /* Centra los enlaces en pantallas pequeñas */
+  }
+
+
+  .navbar-collapse {
+    display: none; /* Oculta el menú por defecto */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Muestra el menú cuando se hace clic */
+  }
+
+  /* Cambia el tamaño de los enlaces */
+  .custom-nav-spacing .nav-link {
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .custom-nav-spacing .nav-link:last-child {
+    margin-right: 15px;
+  }
+
+  .dropdown-menu a {
+    padding: 20px 25px;
+    font-size: 1rem;
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+}
+
+.dropdown-custom-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+  grid-template-rows: repeat(2, auto); /* Siempre 2 filas */
+  grid-gap: 1rem; /* Espacio entre elementos */
+  padding: 10px;
+  max-height: 400px; /* Define un alto máximo si es necesario */
+  overflow-y: auto; /* Habilita scroll si hay más elementos */
+  background-color: white;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para diseño */
+}
+
+
+/* Dropdown Rows (Fila 1 and Fila 2) */
+.dropdown-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Ajustando el estilo de los ítems del dropdown */
+.dropdown-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Organiza el contenido verticalmente */
+  justify-content: flex-start;
+  padding: 10px;/* Agrega un poco de espacio a la izquierda */
+}
+
+.dropdown-item img {
+  max-width: 60px;
+  margin-bottom: 10px; 
+}
+
+.home-p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Asegura que el contenedor de la barra de navegación use Flexbox */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; /* Mueve los elementos al lado derecho */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Ajusta los enlaces de navegación para que se alineen correctamente */
+.custom-nav-spacing .nav-link {
+  padding-left: 30px;
+  margin-left: 30px;
+  color: #2b2c2e !important;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Para pantallas pequeñas, centra los enlaces en lugar de alinearlos a la derecha */
+@media (max-width: 992px) {
+  .navbar-nav {
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+  }
+}
+
+
+

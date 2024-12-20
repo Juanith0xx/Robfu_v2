@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-BoldItalic.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-home {
+    padding: 90px 0px 110px;
+}
+
+.home-h1 {
+    font-family: "Gilroy-Black";
+    font-size: 65px;
+    line-height: 1.11em;
+    padding: 90px 0px 0px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-shape {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.sub-text {
+    font-family: "Roboto-Bold", serif;
+    font-style: normal;
+    font-size: 22px;
+    color: #565657;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.cs-screen {
+    position: relative;
+    display: inline-block;
+}
+
+.img-fluid {
+    display: block;
+    margin-left: 130px;
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 60px; /* Posición inicial */
+    left: 30%;
+    transform: translateX(-50%);
+    max-width: 50%;
+    animation: floatUpDown 8s infinite ease-in-out; /* Animación */
+}
+
+/* Definición de la animación */
+@keyframes floatUpDown {
+    0% {
+        bottom: 60px; /* Posición inicial */
+    }
+    50% {
+        bottom: 80px; /* Subida máxima */
+    }
+    100% {
+        bottom: 60px; /* Retorno a la posición inicial */
+    }
+}

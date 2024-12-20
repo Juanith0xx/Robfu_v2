@@ -1,0 +1,16 @@
+.custom-carousel .carousel-item {
+    padding: 20px 0;
+  }
+  
+  .custom-carousel .d-flex {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes en el contenedor */
+    gap: 10px; /* Espaciado entre las imágenes */
+  }
+  
+  .carousel-img {
+    width: 160px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+    object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
+    filter: grayscale(100%) brightness(1.2) contrast(0.5) sepia(0);
+  }

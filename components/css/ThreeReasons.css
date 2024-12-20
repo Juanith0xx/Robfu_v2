@@ -1,0 +1,58 @@
+
+.three-reasons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Gilroy-Black";;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.accordion-item h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.accordion-item p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.image-section {
+  max-width: 40%;
+}
+
+.helpdesk-image {
+  width: 100%;
+  border-radius: 8px;
+}
