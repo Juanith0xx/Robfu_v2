@@ -1,25 +1,52 @@
-import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importar las flechas
-import "./css/ThreeReasons.css"; // Estilos personalizados
+import { useState, useEffect, useRef } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import "./css/ThreeReasons.css";
 
 const ThreeReasons = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const textRef = useRef(null);
+  const imageRef = useRef(null);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          } else {
+            entry.target.classList.remove("animate");
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Activa cuando el 20% del elemento sea visible
+      }
+    );
+
+    if (textRef.current) observer.observe(textRef.current);
+    if (imageRef.current) observer.observe(imageRef.current);
+
+    return () => {
+      if (textRef.current) observer.unobserve(textRef.current);
+      if (imageRef.current) observer.unobserve(imageRef.current);
+    };
+  }, []);
+
   return (
     <div className="three-reasons-container">
-      <div className="text-section">
+      <div className="text-section hidden" ref={textRef}>
         <p className="subtitle">GET STARTED IN MINUTES</p>
         <h2 className="title">
           3 Main Reasons to <span className="highlight">Choose us.</span>
           <img
-              src="/img/logos/line-shape-10.svg"
-              alt="shape"
-              className="cs-screen"
-            />
+            src="/img/logos/line-shape-10.svg"
+            alt="shape"
+            className="cs-screen"
+          />
         </h2>
         <div className="accordion">
           <div
@@ -81,7 +108,7 @@ const ThreeReasons = () => {
           </div>
         </div>
       </div>
-      <div className="image-section">
+      <div className="image-section hidden" ref={imageRef}>
         <img
           src="/img/logos/PC.png"
           alt="HelpDesk preview"

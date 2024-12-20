@@ -8,7 +8,7 @@ const HomePage = () => {
         {/* Columna de texto */}
         <Col xl={5} lg={6} className="order-lg-first">
           <h1 className="home-h1">
-            Diseña, compra y recibe tu <span className="highlight">proyecto</span>
+            Diseña, compra y recibe tu <span className="highlight">proyecto.</span>
             <img
               src="/img/logos/line-shape-10.svg"
               alt="shape"

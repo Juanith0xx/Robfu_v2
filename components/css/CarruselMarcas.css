@@ -9,7 +9,7 @@
   }
   
   .carousel-img {
-    width: 160px; /* Ajusta el tamaño de las imágenes */
+    width: 190px; /* Ajusta el tamaño de las imágenes */
     height: 100px;
     object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
     filter: grayscale(100%) brightness(1.2) contrast(0.5) sepia(0);
