@@ -4,6 +4,9 @@ import HomePage from '../components/HomePage'
 import MyNavbar from '../components/Nav'
 import ThreeReasons from '../components/ThreeReasons'
 import Communication from '../components/Communication'
+import Comun_two from '../components/Comun_two'
+import Comun_Three from '../components/Comun_Three'
+import Footer from '../components/Footer'
 import './App.css'
 
 
@@ -17,7 +20,9 @@ function App() {
     <Diagram />
     <ThreeReasons />
     <Communication />
-  
+    <Comun_two />
+    <Comun_Three />
+    <Footer />
     </>
   )
 }

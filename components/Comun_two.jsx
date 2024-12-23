@@ -1,4 +1,4 @@
-import './css/Comunication.css';
+import './css/Comunication-two.css';
 import { useEffect, useState, useRef } from 'react';
 
 const CommunicationSection = () => {
@@ -11,14 +11,14 @@ const CommunicationSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setAnimate(true); // Activa la animación
+            setAnimate(true); // Activa la animación cuando el elemento es visible
           } else {
-            setAnimate(false); // Resetea la animación si no está en el viewport
+            setAnimate(false); // Resetea la animación si el elemento no está visible
           }
         });
       },
       {
-        threshold: 0.2, // Activa cuando el 20% del elemento sea visible
+        threshold: 0.2, // Activa cuando el 20% del elemento es visible
       }
     );
 
@@ -33,17 +33,6 @@ const CommunicationSection = () => {
 
   return (
     <div className="communication-container">
-      <div
-        className={`image-container ${animate ? 'animate' : ''}`}
-        ref={imageRef}
-        data-aos="fade-right"
-      >
-        <img
-          src="img/logos/Robfu_corte.jpg"
-          alt="Communication Illustration"
-          className="responsive-image"
-        />
-      </div>
       <div
         className={`text-content ${animate ? 'animate' : ''}`}
         ref={textRef}
@@ -63,6 +52,17 @@ const CommunicationSection = () => {
             quality”
           </p>
         </div>
+      </div>
+      <div
+        className={`image-container ${animate ? 'animate' : ''}`}
+        ref={imageRef}
+        data-aos="fade-right"
+      >
+        <img
+          src="img/logos/Robfu_corte.png"
+          alt="Communication Illustration"
+          className="responsive-image"
+        />
       </div>
     </div>
   );

@@ -1,0 +1,166 @@
+.communication-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 3%;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-family: "Gilroy-Black";
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 span {
+    color: #FF6A3D;
+  }
+  
+  .text-content p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .image-container {
+    max-width: 400%; /* Controla el tamaño máximo del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-image {
+    width: 100%; /* La imagen ocupará el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales */
+    max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+  }
+
+  .communication-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+  }
+  
+  .text-content,
+  .image-container {
+    opacity: 0; /* Inicialmente ocultos */
+    transition: opacity 3.5s ease-in-out, transform 3.5s ease-in-out; /* Transiciones suaves */
+  }
+  
+  .text-content {
+    transform: translateX(-50px); /* Texto desplazado hacia la izquierda */
+  }
+  
+  .image-container {
+    transform: translateX(50px); /* Imagen desplazada hacia la derecha */
+  }
+  
+  .text-content.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Texto vuelve a su posición original */
+  }
+  
+  .image-container.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Imagen vuelve a su posición original */
+  }
+  
+  .responsive-image {
+    width: 100%; /* La imagen ocupará el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales */
+    max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+  }
+
+  
+  .communication-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+}
+
+.text-content,
+.image-container {
+  opacity: 0; /* Inicialmente ocultos */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Transiciones suaves */
+}
+
+.text-content {
+  transform: translateX(50px); /* Texto desplazado hacia la derecha */
+}
+
+.image-container {
+  transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
+}
+
+.text-content.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Texto vuelve a su posición original */
+  padding-left: 5%;
+}
+
+.image-container.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Imagen vuelve a su posición original */
+}
+
+.responsive-image {
+  width: 100%; /* La imagen ocupará el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones originales */
+  max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+  border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+}
+.communication-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+  }
+  
+  .text-content,
+  .image-container {
+    opacity: 0; /* Inicialmente ocultos */
+    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; /* Transiciones suaves */
+  }
+  
+  .text-content {
+    transform: translateX(50px); /* Texto desplazado hacia la derecha */
+  }
+  
+  .image-container {
+    transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
+  }
+  
+  .text-content.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Texto vuelve a su posición original */
+  }
+  
+  .image-container.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Imagen vuelve a su posición original */
+  }
+  
+  .responsive-image {
+    width: 180%; /* La imagen ocupará el ancho del contenedor */
+    height: 150%; /* Mantiene las proporciones originales */
+    max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo */
+    border-radius: 8px;
+    margin-left: 8%;
+  }
+  

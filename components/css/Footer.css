@@ -1,0 +1,124 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2%;
+  }
+  
+  .icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon:hover {
+    color: #ccc;
+  }
+  
+  .footer-text {
+    max-width: 400px;
+    text-align: left;
+    padding-right: 2%;
+  }
+  
+  .footer-title {
+    font-family: "Gilroy-Black", sans-serif;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-highlight {
+    font-size: 25px;
+    font-family: "Gilroy-Black", sans-serif;
+    margin: 5px 0;
+  }
+  
+  .footer-description {
+    margin: 10px 0 0;
+    line-height: 1.5;
+  }
+  
+  .footer-line {
+    border-top: 0.5px solid #fff;
+    margin: 20px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Alinea verticalmente */
+    margin-top: 10px;
+  }
+  
+  .footer-copyright {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .logo-footer {
+    height: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .communication-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+  }
+  
+  .text-content,
+  .image-container {
+    opacity: 0; /* Inicialmente ocultos */
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Transiciones suaves */
+  }
+  
+  .text-content {
+    transform: translateX(50px); /* Texto desplazado hacia la derecha */
+  }
+  
+  .image-container {
+    transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
+  }
+  
+  .text-content.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Texto vuelve a su posición original */
+  }
+  
+  .image-container.animate {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Imagen vuelve a su posición original */
+  }
+  
+  .responsive-image {
+    width: 100%; /* La imagen ocupará el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales */
+    max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+  }
+  

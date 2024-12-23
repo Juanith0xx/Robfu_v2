@@ -73,7 +73,7 @@ const ThreeReasons = () => {
             onClick={() => toggleAccordion(1)}
           >
             <div className="accordion-header">
-              <h3>Manage your client easily</h3>
+              <h3>Manage your clients easily</h3>
               {activeIndex === 1 ? (
                 <FaChevronUp className="accordion-icon" />
               ) : (
