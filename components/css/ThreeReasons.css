@@ -10,7 +10,7 @@
 .text-section,
 .image-section {
   opacity: 0; /* Inicialmente oculto */
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Transiciones suaves */
+  transition: opacity 1.8s ease-in-out, transform 1.8s ease-in-out; /* Transiciones suaves */
 }
 
 .text-section {
