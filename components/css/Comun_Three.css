@@ -67,9 +67,6 @@
   transform: translateX(0); /* Imagen vuelve a su posición original */
 }
 
-
-
-
 .communication-container {
 display: flex;
 justify-content: space-between;
@@ -138,7 +135,7 @@ transform: translateX(0); /* Imagen vuelve a su posición original */
 
 .responsive-image {
   width: 250%; /* La imagen ocupará el ancho del contenedor */
-  height: 200%; /* Mantiene las proporciones originales */
+  height: 100%; /* Mantiene las proporciones originales */
   max-width: 800px; /* Cambia este valor para ajustar el tamaño máximo */
   border-radius: 8px;
   margin-left: 8%;

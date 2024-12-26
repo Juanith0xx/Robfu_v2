@@ -37,7 +37,7 @@ const Footer = () => {
             <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
           <a href="mailto:info@gmail.com" className="icon">
-            <i className="fa fa-envelope" aria-hidden="true"></i> info@gmail.com
+            <i className="fa fa-envelope" aria-hidden="true"></i> contacto@robfu.com
           </a>
         </div>
 
