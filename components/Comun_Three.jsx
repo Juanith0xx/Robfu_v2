@@ -1,11 +1,13 @@
 import './css/Comun_Three.css';
 import { useEffect, useState, useRef } from 'react';
-import { Button } from 'react-bootstrap';
+import { FaGreaterThan,FaArrowRight } from "react-icons/fa";
+
 
 const CommunicationSection = () => {
   const [animate, setAnimate] = useState(false);
   const textRef = useRef(null);
   const imageRef = useRef(null);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -52,7 +54,7 @@ const CommunicationSection = () => {
             “Our team really feels great to use deski apps specially their
             quality”
           </p>
-          <Button className="button-disena">Diseña Aquí</Button>
+          <a target="_blank" href="#" className="button-disena" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} > Ver&nbsp;{hover ? <FaArrowRight /> : <FaGreaterThan />} </a>
         </div>
       </div>
       <div

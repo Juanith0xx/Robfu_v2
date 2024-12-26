@@ -26,20 +26,25 @@
 
 .button-contact {
   background-color: #E9672B;
+  padding: 8px 20px !important;
   border-radius: 5px;
+  font-size: 15px !important;
   font-family: 'Rubik', sans-serif;
-  width: 150px;
-  color: white !important;
+  width: 140px; 
   transition: background-color 0.3s, color 0.3s;
+  transition: color 1.8s ease;
+  transform: translateX(5px);
   display: flex;                /* Usa flexbox */
   align-items: center;          /* Alinea verticalmente */
   justify-content: center;      /* Alinea horizontalmente */
   text-align: center;           /* Asegura que el texto esté centrado */
 }
-.button-contact:hover {
+
+.nav button-contact:hover {
   background-color: #ffb840;
   color: white !important;    
 }
+
 .button-disena{
   background-color: #E9672B;
   border-radius: 5px;
@@ -53,6 +58,7 @@
   text-align: center;           /* Asegura que el texto esté centrado */
   outline: none;
   border: none;
+  padding: 3px 12px 6px 16px;
 }
 .button-disena:hover {
   background-color: #ffb840;
@@ -131,6 +137,10 @@
   padding-top: 10px;
 }
 
+.dropdown-row:nth-of-type(2) {
+  gap: 3rem; /* Aumenta el espacio entre los elementos */
+}
+
 /* Ajustando el estilo de los ítems del dropdown */
 .dropdown-item {
   text-align: left;
@@ -139,7 +149,6 @@
   justify-content: flex-start;
   border-radius: 10px;
   color: white;
-  
 }
 
 .dropdown-item img {
@@ -183,20 +192,25 @@
   display: none !important;
 }
 
+/* Dropdown Menu con Animación de Desvanecimiento y Deslizamiento */
 .dropdown-menu {
   display: flex; /* Flexbox para alinear los elementos */
   justify-content: center; /* Centra los ítems horizontalmente */
   align-items: center; /* Centra los ítems verticalmente si es necesario */
   left: 50%; /* Mueve el menú al centro horizontal */
-  transform: translateX(-50%); /* Corrige el desbordamiento */
+  transform: translateX(-50%) translateY(-10px); /* Inicia el menú ligeramente arriba */
+  opacity: 0; /* Hace el menú invisible por defecto */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Aplica transición de desvanecimiento y deslizamiento */
   top: 100%; /* Justo debajo del toggle */
   position: absolute;
-  width: auto; /* Opcional: ajusta el ancho según el contenido */
+  width: 680%; /* Opcional: ajusta el ancho según el contenido */
   min-width: 200px; /* Evita que sea demasiado pequeño */
   border-radius: 5px;
   padding: 5% 10% 10% 10%;
   background-color: #b75145;
 }
 
-
-
+.dropdown-menu.show {
+  opacity: 1; /* Hace el menú visible */
+  transform: translateX(-50%) translateY(0); /* Mueve el menú a su posición original */
+}

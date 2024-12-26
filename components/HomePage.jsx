@@ -1,7 +1,11 @@
-import { Container, Row, Col, Button } from 'react-bootstrap'; // Importa Button
+import { Container, Row, Col } from 'react-bootstrap'; // Importa Button
 import './css/HomePage.css';
+import { FaGreaterThan,FaArrowRight } from "react-icons/fa";
+import { useState } from 'react';
 
 const HomePage = () => {
+  const [hover, setHover] = useState(false);
+
   return (
     <Container className='container-home'>
       <Row className="align-items-center">
@@ -19,12 +23,7 @@ const HomePage = () => {
             Olvídate de hacer complicados cálculos para desarrollar tus proyectos. Ahora con robfu arrastra, modifica, compra y recibes tus proyectos fácilmente.
           </p>
           {/* Botón debajo del párrafo */}
-          <Button
-            href="https://www.robfu.com/configurador" target='bank'
-            className="button-disena"
-          >
-            Diseña Aquí
-          </Button>
+          <a target="_blank" href="https://www.robfu.com/configurador" className="button-disena" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} > Diseña Aqui&nbsp;{hover ? <FaArrowRight /> : <FaGreaterThan />} </a>
         </Col>
 
         {/* Columna de imagen */}
