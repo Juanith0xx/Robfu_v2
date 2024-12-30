@@ -1,0 +1,56 @@
+.scroll-to-top {
+  position: fixed; /* Fijo en la pantalla */
+  bottom: 20px; /* Separación desde la parte inferior */
+  right: 20px; /* Separación desde el lado derecho */
+  background-color: #FF6A3D; /* Color de fondo */
+  color: white; /* Color del texto o ícono */
+  border: none; /* Sin bordes */
+  border-radius: 50%; /* Forma redonda */
+  width: 70px; /* Ancho del botón */
+  height: 70px; /* Altura del botón */
+  display: flex; /* Alinear contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
+  transition: opacity 0.3s ease; /* Suavidad al mostrar/ocultar */
+  opacity: 0; /* Invisible por defecto */
+  visibility: hidden; /* Oculto por defecto */
+}
+
+.scroll-to-top.show {
+  opacity: 1; /* Visible */
+  visibility: visible; /* Mostrado */
+}
+
+.scroll-to-top:hover {
+  background-color: #ffb840; /* Color más oscuro al pasar el ratón */
+}
+
+.rotate {
+  animation: rotate-clockwise 1.60s linear;
+}
+
+.rotated .rotate {
+  transform: rotate(0deg); /* Restablece la posición original */
+}
+
+@keyframes rotate-clockwise {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 576px) {
+.scroll-to-top {
+  bottom: 15px; /* Ajusta la posición para pantallas pequeñas */
+  right: 15px; /* Ajusta la posición para pantallas pequeñas */
+  width: 50px; /* Reduce el tamaño del botón */
+  height: 50px; /* Reduce el tamaño del botón */
+}
+}

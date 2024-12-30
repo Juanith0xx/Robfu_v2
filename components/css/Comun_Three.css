@@ -1,19 +1,25 @@
 .communication-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+  margin-top: 3%;
   font-family: Arial, sans-serif;
   color: #333;
-  margin-top: 3%;
 }
 
+/* Contenido de texto */
 .text-content {
   max-width: 50%;
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(50px); /* Texto desplazado hacia la derecha */
+  transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; /* Transiciones suaves */
 }
 
 .text-content h1 {
-  font-family: "Gilroy-Black";
+  font-family: " Poppins ", sans-serif;
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -28,104 +34,22 @@
   font-size: 30px;
   margin-bottom: 30px;
 }
+
+/* Imagen dentro del contenedor */
 .image-container {
   max-width: 400%; /* Controla el tamaño máximo del contenedor */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.communication-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  gap: 20px;
-  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
-}
-
-.text-content,
-.image-container {
-  opacity: 0; /* Inicialmente ocultos */
-  transition: opacity 3.5s ease-in-out, transform 3.5s ease-in-out; /* Transiciones suaves */
-}
-
-.text-content {
-  transform: translateX(-50px); /* Texto desplazado hacia la izquierda */
-}
-
-.image-container {
-  transform: translateX(50px); /* Imagen desplazada hacia la derecha */
-}
-
-.text-content.animate {
-  opacity: 1; /* Hacer visible */
-  transform: translateX(0); /* Texto vuelve a su posición original */
-}
-
-.image-container.animate {
-  opacity: 1; /* Hacer visible */
-  transform: translateX(0); /* Imagen vuelve a su posición original */
-}
-
-.communication-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 40px;
-gap: 20px;
-overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
-}
-
-.text-content,
-.image-container {
-opacity: 0; /* Inicialmente ocultos */
-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Transiciones suaves */
-}
-
-.text-content {
-transform: translateX(50px); /* Texto desplazado hacia la derecha */
-}
-
-.image-container {
-transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
-}
-
-.text-content.animate {
-opacity: 1; /* Hacer visible */
-transform: translateX(0); /* Texto vuelve a su posición original */
-padding-left: 5%;
-}
-
-.image-container.animate {
-opacity: 1; /* Hacer visible */
-transform: translateX(0); /* Imagen vuelve a su posición original */
-}
-.communication-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  gap: 20px;
-  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
-}
-
-.text-content,
-.image-container {
-  opacity: 0; /* Inicialmente ocultos */
+  opacity: 0; /* Inicialmente oculta */
+  transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
   transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; /* Transiciones suaves */
 }
 
-.text-content {
-  transform: translateX(50px); /* Texto desplazado hacia la derecha */
-}
-
-.image-container {
-  transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
-}
-
 .text-content.animate {
   opacity: 1; /* Hacer visible */
   transform: translateX(0); /* Texto vuelve a su posición original */
+  padding-left: 5%;
 }
 
 .image-container.animate {
@@ -134,10 +58,52 @@ transform: translateX(0); /* Imagen vuelve a su posición original */
 }
 
 .responsive-image {
-  width: 250%; /* La imagen ocupará el ancho del contenedor */
-  height: 100%; /* Mantiene las proporciones originales */
+  width: 100%; /* La imagen ocupará el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones originales */
   max-width: 800px; /* Cambia este valor para ajustar el tamaño máximo */
   border-radius: 8px;
   margin-left: 8%;
 }
 
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .text-content {
+    max-width: 60%;
+    font-size: 25px; /* Ajuste de tamaño de texto */
+  }
+
+  .image-container {
+    max-width: 250%; /* Ajustar tamaño de la imagen */
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .communication-container {
+    flex-direction: column; /* Apilar los elementos en pantallas más pequeñas */
+    align-items: center;
+  }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .text-content {
+    max-width: 80%;
+    font-size: 22px; /* Ajuste de tamaño de texto */
+  }
+
+  .image-container {
+    max-width: 200%; /* Ajustar tamaño de la imagen */
+  }
+
+  .communication-container {
+    padding: 20px;
+  }
+
+  .responsive-image {
+    width: 100%;
+    margin-left: 0;
+  }
+}

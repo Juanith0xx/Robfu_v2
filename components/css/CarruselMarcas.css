@@ -1,16 +1,46 @@
 .custom-carousel .carousel-item {
-    padding: 20px 0;
-  }
-  
-  .custom-carousel .d-flex {
-    display: flex;
-    justify-content: space-between; /* Distribuye las imágenes en el contenedor */
-    gap: 10px; /* Espaciado entre las imágenes */
-  }
-  
+  padding: 20px 0;
+}
+
+.custom-carousel .d-flex {
+  display: flex;
+  justify-content: space-between; /* Distribuye las imágenes en el contenedor */
+  gap: 10px; /* Espaciado entre las imágenes */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas en pantallas pequeñas */
+}
+
+.carousel-img {
+  width: 190px; /* Tamaño predeterminado */
+  height: 100px;
+  object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
+  filter: grayscale(100%) brightness(1.2) contrast(0.5) sepia(0);
+  transition: all 0.3s ease; /* Transición para efectos al hacer hover */
+}
+
+.carousel-img:hover {
+  filter: none; /* Quita los filtros al pasar el cursor */
+}
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
   .carousel-img {
-    width: 190px; /* Ajusta el tamaño de las imágenes */
-    height: 100px;
-    object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
-    filter: grayscale(100%) brightness(1.2) contrast(0.5) sepia(0);
+      width: 150px; /* Reduce el tamaño de las imágenes */
+      height: 80px;
   }
+
+  .custom-carousel .d-flex {
+      justify-content: center; /* Centra las imágenes en pantallas más pequeñas */
+  }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .carousel-img {
+      width: 120px; /* Reduce aún más el tamaño */
+      height: 70px;
+  }
+
+  .custom-carousel .carousel-item {
+      padding: 10px 0; /* Reduce el espacio entre elementos */
+  }
+}

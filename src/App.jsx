@@ -7,13 +7,16 @@ import Communication from '../components/Communication'
 import Comun_two from '../components/Comun_two'
 import Comun_Three from '../components/Comun_Three'
 import Footer from '../components/Footer'
+import ScrollToTop from '../components/ScrollToTop'
 import './App.css'
+
 
 
 function App() {
 
   return (
     <>
+    <ScrollToTop />
     <MyNavbar />
     <HomePage />
     <CarruselMarcas />

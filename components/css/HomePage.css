@@ -1,92 +1,139 @@
-@font-face {
-    font-family: 'Gilroy-Black';
-    src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url('../fonts/Roboto-BoldItalic.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .container-home {
     padding: 90px 0px 110px;
-}
-
-.home-h1 {
-    font-family: "Gilroy-Black";
+  }
+  
+  .home-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 65px;
     line-height: 1.11em;
     padding: 90px 0px 0px;
     text-align: left;
     margin-left: 0;
     padding-left: 0;
-}
-
-.highlight {
+  }
+  
+  .highlight {
     position: relative;
     display: inline-block;
-}
-
-.underline-shape {
+  }
+  
+  .underline-shape {
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 100%;
     z-index: -1;
-}
-
-.sub-text {
+  }
+  
+  .sub-text {
     font-family: "Roboto-Bold", serif;
     font-style: normal;
     font-size: 22px;
     color: #565657;
     padding-top: 15px;
     text-align: left;
-}
-
-.cs-screen {
+  }
+  
+  .cs-screen {
     position: relative;
     display: inline-block;
-}
-
-.img-fluid {
+  }
+  
+  .img-fluid {
     display: block;
     margin-left: 130px;
     margin-right: 0;
     max-width: 100%;
     height: auto;
-}
-
-.position-relative {
+  }
+  
+  .position-relative {
     position: relative;
-}
-
-.main-image {
+  }
+  
+  .main-image {
     max-width: 100%;
     height: auto;
-}
-
-.overlay-image {
+  }
+  
+  .overlay-image {
     position: absolute;
     bottom: 60px; /* Posición inicial */
     left: 30%;
     transform: translateX(-50%);
     max-width: 50%;
     animation: floatUpDown 8s infinite ease-in-out; /* Animación */
-}
-
-/* Definición de la animación */
-@keyframes floatUpDown {
+  }
+  
+  /* Definición de la animación */
+  @keyframes floatUpDown {
     0% {
-        bottom: 60px; /* Posición inicial */
+      bottom: 60px; /* Posición inicial */
     }
     50% {
-        bottom: 80px; /* Subida máxima */
+      bottom: 80px; /* Subida máxima */
     }
     100% {
-        bottom: 60px; /* Retorno a la posición inicial */
+      bottom: 60px; /* Retorno a la posición inicial */
     }
-}
+  }
+  
+  /* Responsividad para pantallas medianas (tablets) */
+  @media (max-width: 768px) {
+    .container-home {
+      padding: 60px 20px 80px; /* Ajusta los márgenes */
+    }
+  
+    .home-h1 {
+      font-size: 50px; /* Reduce el tamaño del título */
+      text-align: center; /* Centra el texto */
+      padding: 60px 0 0;
+    }
+  
+    .sub-text {
+      font-size: 18px; /* Reduce el tamaño del texto secundario */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .img-fluid {
+      margin-left: 0; /* Elimina el margen izquierdo */
+      margin-right: 0;
+    }
+  
+    .overlay-image {
+      max-width: 70%; /* Ajusta el tamaño de la imagen flotante */
+      left: 50%; /* Centra la imagen flotante */
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Responsividad para pantallas pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .container-home {
+      padding: 40px 10px 60px; /* Ajusta los márgenes */
+    }
+  
+    .home-h1 {
+      font-size: 36px; /* Reduce aún más el tamaño del título */
+      text-align: center; /* Centra el texto */
+      padding: 50px 0 0;
+    }
+  
+    .sub-text {
+      font-size: 16px; /* Ajusta el tamaño del texto secundario */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .img-fluid {
+      margin-left: 0; /* Elimina el margen izquierdo */
+      margin-right: 0;
+    }
+  
+    .overlay-image {
+      max-width: 80%; /* Ajusta el tamaño de la imagen flotante */
+      left: 50%; /* Centra la imagen flotante */
+      transform: translateX(-50%);
+    }
+  }
+  

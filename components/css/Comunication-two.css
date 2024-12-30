@@ -42,3 +42,54 @@
   border-radius: 10px !important; /* Bordes redondeados */
   margin-left: 8%; /* Ajusta el margen según sea necesario */
 }
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .communication-container {
+    flex-direction: column; /* Cambia la dirección del layout a columna */
+    padding: 20px; /* Ajusta el padding */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .text-content {
+    max-width: 100%; /* Permite que el texto ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
+    padding-left: 0; /* Elimina el padding izquierdo */
+  }
+
+  .responsive-image {
+    width: 100% !important; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene las proporciones originales */
+    max-width: 100% !important; /* Ajusta el tamaño máximo de la imagen */
+    margin-left: 0; /* Elimina el margen */
+  }
+
+  .text-content h1 {
+    font-size: 1.8rem; /* Ajusta el tamaño del título */
+  }
+
+  .text-content p {
+    font-size: 16px; /* Ajusta el tamaño del párrafo */
+  }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .communication-container {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título */
+  }
+
+  .text-content p {
+    font-size: 14px; /* Ajusta el tamaño del párrafo */
+  }
+
+  .responsive-image {
+    width: 100% !important; /* La imagen ocupará el 100% del contenedor */
+    max-width: 100% !important; /* Ajusta el tamaño máximo */
+    margin-left: 0; /* Elimina el margen */
+  }
+}

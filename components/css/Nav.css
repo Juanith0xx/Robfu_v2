@@ -17,7 +17,7 @@
   color: #2b2c2e !important;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  text-align: left; /* Alinea el texto a la izquierda */
+  text-align: center !important; /* Alinea el texto a la izquierda */
 }
 
 .custom-nav-spacing .nav-link:last-child {
@@ -103,7 +103,6 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #2b2c2e; /* Fondo oscuro para el menú */
     padding: 20px;
     height: 100vh; /* El menú ocupará toda la altura de la pantalla */
     overflow-y: auto;
@@ -213,4 +212,81 @@
 .dropdown-menu.show {
   opacity: 1; /* Hace el menú visible */
   transform: translateX(-50%) translateY(0); /* Mueve el menú a su posición original */
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color: #2b2c2e;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: #2b2c2e;
+    position: relative;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #2b2c2e;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+
+  /* Cambiar color al activar el menú */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  /* Ajustar el menú desplegable */
+  .navbar-collapse {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1045;
+    padding: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

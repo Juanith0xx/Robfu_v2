@@ -1,69 +1,70 @@
 .diagram-container {
-    text-align: center;
-    background-color: #fff6ef;
-    padding: 40px 20px;
-  }
-  
-  .diagram-subtitle {
-    font-size: 14px;
-    color: #aaa;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-  }
-  
-  .diagram-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .diagram-title span {
-    text-decoration: underline;
-    text-decoration-color: #ffbd59;
-  }
-  
-  .diagram-cards {
+  text-align: center;
+  background-color: #fff6ef;
+  padding: 40px 20px;
+}
+
+.diagram-subtitle {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.diagram-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.diagram-title span {
+  text-decoration: underline;
+  text-decoration-color: #ffbd59;
+}
+
+.diagram-cards {
   display: flex;
   justify-content: space-evenly; /* Espaciado uniforme entre tarjetas */
   gap: 10px; /* Ajusta la separación horizontal */
   margin-top: 40px; /* Espaciado superior adicional */
   flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
 }
-  
-  .diagram-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    width: 300px;
-  }
-  
-  .diagram-card h3 {
-    font-family: "Gilroy-Black";
-    font-size: 22px;
-    color: #101621;
-    margin: 15px 0 10px;
-  }
-  
-  .diagram-card p {
-    font-family: 'Rubik';
-    font-size: 18px;
-    color: #000000;
-    text-align: left;
-  }
 
-  .diagram-cards-row {
-    display: flex;
-    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
-    align-items: flex-start; /* Alinear las tarjetas al inicio vertical */
-    gap: 10px; /* Separación entre las tarjetas */
-    flex-wrap: nowrap; /* Forzar que las tarjetas se mantengan en una fila */
-  }
-  
-  .diagram-card {
+.diagram-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Ancho predeterminado */
+}
+
+.diagram-card h3 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 22px;
+  color: #101621;
+  margin: 15px 0 10px;
+}
+
+.diagram-card p {
+  font-family: 'Rubik';
+  font-size: 18px;
+  color: #000000;
+  text-align: left;
+}
+
+.diagram-cards-row {
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+  align-items: flex-start; /* Alinear las tarjetas al inicio vertical */
+  gap: 10px; /* Separación entre las tarjetas */
+  flex-wrap: nowrap; /* Forzar que las tarjetas se mantengan en una fila */
+}
+
+.diagram-card {
   width: 220px; /* Ajusta el ancho de las tarjetas */
   height: 350px; /* Establece una altura fija */
   padding: 20px; /* Espaciado interno */
@@ -77,26 +78,67 @@
   flex-direction: column; /* Asegura que los elementos estén en columna */
   justify-content: space-between; /* Distribuye el contenido verticalmente */
 }
-  .diagram-card:hover {
-    transform: translateY(-8px); /* Animación de elevación al pasar el mouse */
-  }
-  
-  .diagram-icon {
+
+.diagram-card:hover {
+  transform: translateY(-8px); /* Animación de elevación al pasar el mouse */
+}
+
+.diagram-icon {
   width: 180px; /* Ajusta el tamaño del ícono */
   height: 150px;
   margin: 0 auto 16px; /* Centra el ícono y agrega un margen inferior */
 }
-  
-  .diagram-subtitle {
-    color: #ff8a00;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-  }
-  
+
+.diagram-subtitle {
+  color: #ff8a00;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.diagram-title {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
   .diagram-title {
-    font-size: 28px;
-    line-height: 1.4;
-    margin-bottom: 24px;
+    font-size: 24px; /* Reduce el tamaño del título */
   }
-  
+
+  .diagram-card {
+    width: 45%; /* Las tarjetas ocupan el 45% del ancho */
+  }
+
+  .diagram-cards {
+    justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+  }
+
+  .diagram-container {
+    padding: 30px 15px; /* Reduce el padding en pantallas pequeñas */
+  }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .diagram-title {
+    font-size: 20px; /* Reduce aún más el tamaño del título */
+  }
+
+  .diagram-card {
+    width: 90%; /* Las tarjetas ocupan el 90% del ancho */
+    height: auto; /* Ajuste automático de la altura */
+    margin-bottom: 20px; /* Añade un margen inferior para separar las tarjetas */
+  }
+
+  .diagram-cards {
+    flex-direction: column; /* Las tarjetas se apilan en una columna */
+    align-items: center; /* Centra las tarjetas */
+  }
+
+  .diagram-container {
+    padding: 20px 10px; /* Ajuste de padding */
+  }
+}

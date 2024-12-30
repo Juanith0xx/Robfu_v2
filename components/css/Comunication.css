@@ -1,89 +1,90 @@
 .communication-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin-top: 3%;
-  }
-  
-  .text-content {
-    max-width: 50%;
-  }
-  
-  .text-content h1 {
-    font-family: "Gilroy-Black";
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  
-  .text-content h1 span {
-    color: #FF6A3D;
-  }
-  
-  .text-content p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-  .image-container {
-    max-width: 400%; /* Controla el tamaño máximo del contenedor */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .responsive-image {
-    width: 100%; /* La imagen ocupará el ancho del contenedor */
-    height: auto; /* Mantiene las proporciones originales */
-    max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
-    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-top: 3%;
+}
 
-  .communication-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    gap: 20px;
-    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
-  }
-  
-  .text-content,
-  .image-container {
-    opacity: 0; /* Inicialmente ocultos */
-    transition: opacity 3.5s ease-in-out, transform 3.5s ease-in-out; /* Transiciones suaves */
-  }
-  
-  .text-content {
-    transform: translateX(-50px); /* Texto desplazado hacia la izquierda */
-  }
-  
-  .image-container {
-    transform: translateX(50px); /* Imagen desplazada hacia la derecha */
-  }
-  
-  .text-content.animate {
-    opacity: 1; /* Hacer visible */
-    transform: translateX(0); /* Texto vuelve a su posición original */
-  }
-  
-  .image-container.animate {
-    opacity: 1; /* Hacer visible */
-    transform: translateX(0); /* Imagen vuelve a su posición original */
-  }
-  
-  .responsive-image {
-    width: 100%; /* La imagen ocupará el ancho del contenedor */
-    height: auto; /* Mantiene las proporciones originales */
-    max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
-    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
-  }
+.text-content {
+  max-width: 50%;
+}
 
-  
-  .communication-container {
+.text-content h1 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-content h1 span {
+  color: #FF6A3D;
+}
+
+.text-content p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  max-width: 400%; /* Controla el tamaño máximo del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-image {
+  width: 100%; /* La imagen ocupará el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones originales */
+  max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+  border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+}
+
+.communication-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+}
+
+.text-content,
+.image-container {
+  opacity: 0; /* Inicialmente ocultos */
+  transition: opacity 3.5s ease-in-out, transform 3.5s ease-in-out; /* Transiciones suaves */
+}
+
+.text-content {
+  transform: translateX(-50px); /* Texto desplazado hacia la izquierda */
+}
+
+.image-container {
+  transform: translateX(50px); /* Imagen desplazada hacia la derecha */
+}
+
+.text-content.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Texto vuelve a su posición original */
+}
+
+.image-container.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Imagen vuelve a su posición original */
+}
+
+.responsive-image {
+  width: 100%; /* La imagen ocupará el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones originales */
+  max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
+  border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+}
+
+.communication-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,44 +124,96 @@
   max-width: 300px; /* Cambia este valor para ajustar el tamaño máximo */
   border-radius: 8px; /* Añade bordes redondeados si lo deseas */
 }
+
 .communication-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    gap: 20px;
-    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+}
+
+.text-content,
+.image-container {
+  opacity: 0; /* Inicialmente ocultos */
+  transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; /* Transiciones suaves */
+}
+
+.text-content {
+  transform: translateX(50px); /* Texto desplazado hacia la derecha */
+}
+
+.image-container {
+  transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
+}
+
+.text-content.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Texto vuelve a su posición original */
+}
+
+.image-container.animate {
+  opacity: 1; /* Hacer visible */
+  transform: translateX(0); /* Imagen vuelve a su posición original */
+}
+
+.responsive-image {
+  width: 180%; /* La imagen ocupará el ancho del contenedor */
+  height: 150%; /* Mantiene las proporciones originales */
+  max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo */
+  border-radius: 8px;
+  margin-left: 8%;
+}
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .communication-container {
+    flex-direction: column; /* Cambia la dirección del layout a columna */
+    padding: 20px; /* Ajusta el padding */
+    align-items: center; /* Centra los elementos */
   }
-  
-  .text-content,
-  .image-container {
-    opacity: 0; /* Inicialmente ocultos */
-    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; /* Transiciones suaves */
-  }
-  
+
   .text-content {
-    transform: translateX(50px); /* Texto desplazado hacia la derecha */
+    max-width: 100%; /* Permite que el texto ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
   }
-  
+
   .image-container {
-    transform: translateX(-50px); /* Imagen desplazada hacia la izquierda */
+    max-width: 100%; /* Ajusta el ancho de la imagen */
+    margin-top: 20px; /* Espaciado adicional */
   }
-  
-  .text-content.animate {
-    opacity: 1; /* Hacer visible */
-    transform: translateX(0); /* Texto vuelve a su posición original */
+
+  .text-content h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
   }
-  
-  .image-container.animate {
-    opacity: 1; /* Hacer visible */
-    transform: translateX(0); /* Imagen vuelve a su posición original */
+
+  .text-content p {
+    font-size: 18px; /* Ajusta el tamaño del párrafo */
   }
-  
+
   .responsive-image {
-    width: 180%; /* La imagen ocupará el ancho del contenedor */
-    height: 150%; /* Mantiene las proporciones originales */
-    max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo */
-    border-radius: 8px;
-    margin-left: 8%;
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    margin-left: 0; /* Elimina el margen */
   }
-  
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .communication-container {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+
+  .text-content p {
+    font-size: 16px; /* Reduce el tamaño del párrafo */
+  }
+
+  .responsive-image {
+    max-width: 100%; /* La imagen ocupa todo el ancho */
+    margin-left: 0; /* Elimina el margen */
+  }
+}
