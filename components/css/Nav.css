@@ -42,7 +42,7 @@
 
 .nav button-contact:hover {
   background-color: #ffb840;
-  color: white !important;    
+  color: white !important;
 }
 
 .button-disena{
@@ -67,25 +67,26 @@
 
 .dropdown-menu a {
   font-family: 'Rubik', sans-serif;
-  font-size: 40px;
+  font-size: 18px;
   position: relative;
   display: inline-block;
-  padding: 20px 10px; /* Reducido el padding horizontal */
+  padding: 0px 0px; /* Reducido el padding horizontal */
   color: #2b2c2e !important;
   text-decoration: none;
-  background: linear-gradient(to right, transparent 50%, #E9672B 50%);
-  background-size: 200% 100%;
   background-position: left bottom;
   transition: background-position 0.8s ease-out, color 0.5s ease-out !important;
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.dropdown-menu a:hover {
-  background-color: #b75145;
-  background-position: right bottom;
-  color: white;
-  border-radius: 5px !important;
+.dropdown-menu a:focus,
+.dropdown-menu a:active {
+  outline: none; /* Quita el contorno azul */
+  box-shadow: none; /* Elimina cualquier sombra predeterminada */
 }
+.dropdown-menu a {
+  -webkit-tap-highlight-color: transparent; /* Quita el efecto azul en dispositivos móviles */
+}
+
 
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 992px) {
