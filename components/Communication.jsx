@@ -39,7 +39,7 @@ const CommunicationSection = () => {
         data-aos="fade-right"
       >
         <img
-          src="img/logos/Robfu_corte.jpg"
+          src="img/logos/Robfu_corte_v2.png"
           alt="Communication Illustration"
           className="responsive-image"
         />
@@ -50,17 +50,13 @@ const CommunicationSection = () => {
         data-aos="fade-left"
       >
         <h1>
-          Make communication <br /> <span>Fast & efficient.</span>
+          Obten el valor de tus Proyectos
         </h1>
         <p>
-          Our chatbots and live chat capture more ipsum of your best leads and
-          convert them while they’re hot dummy text.
+        Al crear tu proyecto, nuestra plataforma hace el cálculo final del costo total del proyecto, así multiplicas tu productividad 10x.
         </p>
         <div className="testimonial">
-          <div className="quote-icon">&ldquo;</div>
           <p>
-            “Our team really feels great to use deski apps specially their
-            quality”
           </p>
         </div>
       </div>

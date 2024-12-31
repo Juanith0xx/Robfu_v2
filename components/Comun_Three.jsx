@@ -42,18 +42,12 @@ const CommunicationSection = () => {
         data-aos="fade-left"
       >
         <h1>
-          Make communication <br /> <span>Fast & efficient.</span>
+         Una Fábrica en tus manos.
         </h1>
         <p>
-          Our chatbots and live chat capture more ipsum of your best leads and
-          convert them while they’re hot dummy text.
+        Trabajar con robfu es como tener una fábrica completa en tus manos. Compra y recibe todo el material mecanizado y listo parta armar tus proyectos, multiplica tu productividad y sumate a la transformación digitalque tu empresa necesita.
         </p>
         <div className="testimonial">
-          <div className="quote-icon">&ldquo;</div>
-          <p>
-            “Our team really feels great to use deski apps specially their
-            quality”
-          </p>
           <a target="_blank" href="#" className="button-disena" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} > Ver&nbsp;{hover ? <FaArrowRight /> : <FaGreaterThan />} </a>
         </div>
       </div>

@@ -3,9 +3,9 @@ import './css/Diagram.css';
 const Diagram = () => {
   return (
     <div className="diagram-container">
-      <p className="diagram-subtitle">WHAT WE DO</p>
+      <p className="diagram-subtitle">Que hacemos</p>
       <h1 className="diagram-title">
-        Use deski to drive growth <br /> at your business.
+        Nunca fue tan fácil hacer un <br />  Mueble.
       </h1>
       <div className="diagram-cards-row">
         {/* Card 1 */}
@@ -53,7 +53,7 @@ const Diagram = () => {
           />
           <h3>Delivery</h3>
           <p>
-           Robfu se encargara de todo, asi tu solo te preocuparas de tus clientes.
+          Recibe todo  listo para armar y seguir vendiendo más proyectos.
           </p>
         </div>
       </div>

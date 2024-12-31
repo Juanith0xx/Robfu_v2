@@ -59,7 +59,7 @@
   
   .overlay-image {
     position: absolute;
-    bottom: 60px; /* Posición inicial */
+    bottom: 50px; /* Posición inicial */
     left: 30%;
     transform: translateX(-50%);
     max-width: 50%;
@@ -69,13 +69,13 @@
   /* Definición de la animación */
   @keyframes floatUpDown {
     0% {
-      bottom: 60px; /* Posición inicial */
+      bottom: 90px; /* Posición inicial */
     }
     50% {
-      bottom: 80px; /* Subida máxima */
+      bottom: 100px; /* Subida máxima */
     }
     100% {
-      bottom: 60px; /* Retorno a la posición inicial */
+      bottom: 80px; /* Retorno a la posición inicial */
     }
   }
   
