@@ -6,7 +6,7 @@
   gap: 20px;
   overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
   margin-top: 3%;
-  font-family: Arial, sans-serif;
+  font-family:"Roboto", serif;
   color: #333;
 }
 

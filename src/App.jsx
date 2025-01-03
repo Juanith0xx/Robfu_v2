@@ -12,6 +12,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import Blog from '../components/Blog';
 import News from '../components/News';
 import Prices from '../components/Prices';
+import Chat from '../components/Chat';
 import './App.css';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
           <ThreeReasons />
           <Communication />
           <Comun_two />
-          <Comun_Three />
+          <Comun_Three />          
           </>
         } />
         <Route path="/blog" element={<Blog />} />
@@ -36,6 +37,7 @@ function App() {
         <Route path="/prices" element={<Prices />} />
       </Routes>
       <Footer />
+      
     </Router>
   );
 }

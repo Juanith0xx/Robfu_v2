@@ -39,7 +39,7 @@ const CommunicationSection = () => {
         data-aos="fade-left"
       >
         <h1>
-         Medidas De Fabricación Por Gabinete.
+         Medidas de fabricación por Gabinete.
          <img
             src="/img/logos/line-shape-10.svg"
             alt="shape"

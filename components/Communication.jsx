@@ -50,7 +50,7 @@ const CommunicationSection = () => {
         data-aos="fade-left"
       >
         <h1>
-          Obten el valor de tus Proyectos
+          Obten el valor de tus Proyectos.
           <img
             src="/img/logos/line-shape-10.svg"
             alt="shape"
