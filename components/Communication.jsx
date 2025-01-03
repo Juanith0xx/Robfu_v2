@@ -51,6 +51,11 @@ const CommunicationSection = () => {
       >
         <h1>
           Obten el valor de tus Proyectos
+          <img
+            src="/img/logos/line-shape-10.svg"
+            alt="shape"
+            className="cs-screen"
+          />
         </h1>
         <p>
         Al crear tu proyecto, nuestra plataforma hace el cálculo final del costo total del proyecto, así multiplicas tu productividad 10x.

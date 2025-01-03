@@ -40,6 +40,11 @@ const CommunicationSection = () => {
       >
         <h1>
          Medidas De Fabricación Por Gabinete.
+         <img
+            src="/img/logos/line-shape-10.svg"
+            alt="shape"
+            className="cs-screen"
+          />
         </h1>
         <p>
         Ahora nunca más tendrás que hacer complicados cálculos para obtener los planos de corte, ya que se calculan automáticamente al crear tu proyecto.

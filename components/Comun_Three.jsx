@@ -43,6 +43,12 @@ const CommunicationSection = () => {
       >
         <h1>
          Una Fábrica en tus manos.
+         <img
+            src="/img/logos/line-shape-10.svg"
+            alt="shape"
+            className="cs-screen"
+          />
+
         </h1>
         <p>
         Trabajar con robfu es como tener una fábrica completa en tus manos. Compra y recibe todo el material mecanizado y listo parta armar tus proyectos, multiplica tu productividad y sumate a la transformación digitalque tu empresa necesita.
