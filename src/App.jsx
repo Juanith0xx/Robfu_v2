@@ -14,6 +14,7 @@ import News from '../components/News';
 import Prices from '../components/Prices';
 import Chat from '../components/Chat';
 import './App.css';
+import ChatBubble from '../components/ChatBubble';
 
 function App() {
   return (
@@ -37,7 +38,6 @@ function App() {
         <Route path="/prices" element={<Prices />} />
       </Routes>
       <Footer />
-      
     </Router>
   );
 }
