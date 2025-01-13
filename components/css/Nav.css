@@ -60,18 +60,20 @@
   border: none;
   padding: 3px 12px 6px 16px;
 }
+
 .button-disena:hover {
-  background-color: #ffb840;
+  background-color: #FF9919;
   color: white !important;    
 }
 
 .dropdown-menu a {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
+  font-size: bold;
   position: relative;
   display: inline-block;
   padding: 0px 0px; /* Reducido el padding horizontal */
-  color: #2b2c2e !important;
+  color: black!important;
   text-decoration: none;
   background-position: left bottom;
   transition: background-position 0.8s ease-out, color 0.5s ease-out !important;
@@ -148,19 +150,29 @@
   flex-direction: column; /* Organiza el contenido verticalmente */
   justify-content: flex-start;
   border-radius: 10px;
-  color: white;
+  color: black;
+  font-size: bold;
+  position: relative;
+  padding: 10px;
+  z-index: 1; /* Asegura que el contenido se muestre encima del borde animado */
+}
+.dropdown-item.show {
+  background-color: #FFE0B2;  
 }
 
 .dropdown-item img {
   max-width: 80px;
   margin-bottom: 10px; 
   padding-top: 10px;
+  color: black;
+   
 }
 
 .home-p {
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   text-align: left; /* Alinea el texto a la izquierda */
+  font-size: bold !important;
 }
 
 /* Asegura que el contenedor de la barra de navegación use Flexbox */
@@ -178,6 +190,7 @@
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   text-align: left; /* Alinea el texto a la izquierda */
+  font-size: bold;
 }
 
 /* Para pantallas pequeñas, centra los enlaces en lugar de alinearlos a la derecha */
@@ -204,10 +217,10 @@
   top: 100%; /* Justo debajo del toggle */
   position: absolute;
   width: 680%; /* Opcional: ajusta el ancho según el contenido */
-  min-width: 200px; /* Evita que sea demasiado pequeño */
+  min-width: 200px; /* Evita que sea demasiado pequeño */ 
   border-radius: 5px;
   padding: 5% 10% 10% 10%;
-  background-color: #b75145;
+  background-color: #FFE0B2;
 }
 
 .dropdown-menu.show {
